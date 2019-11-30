@@ -1,0 +1,20 @@
+{
+"name": "MusicTogether",
+"short_name": "一起聽音樂",
+"start_url": "",//你的網頁起始位址
+"background_color": "#FFFFFF",
+"display": "standalone",
+"theme_color": "#536878",
+"theme_color": "#536878",
+"lang": "zh-Hant-TW",
+"orientation" : "any",
+"icons": 
+	[
+		{"src": "images/icon.png",
+			"type": "image/png",
+			"sizes": "128x128"},
+		{"src": "images/icon256.png",
+			"type": "image/png",
+			"sizes": "256x256"}
+	]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="ianchen">
+	<meta name="description" content="快來參加F2E X KKBOX體驗Open API">
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta name="apple-mobile-web-app-title" content="musictogether">
+	<link rel="apple-touch-icon" href="/images/icon.png" sizes="128x128">
+	<link rel="apple-touch-icon" href="/images/icon256.png" sizes="256x256">
+	<style>
+	</style>
+	<title>F2E X KKBOX</title>
+</head>
+<body>
+	<div id="app">
+		<div class="navbar">
+			<img class="logo" src="images/logo.png">
+			<input type="text" v-model="search" class="searchbar">
+			<button @click="searchbar" class="searchbtn">search</button>
+		</div>
+		<div class="searchreponse">
+			<div class="block" v-for="(data ,index) in searchreponse" v-if="index>page-2&&index<page+3">
+				<img class="blockimg" :src="data.album.images[0].url" alt="封面圖片">
+				<a class="blocktitle" :href="data.url"><p>{{data.name}}</p></a>
+				<button @click="playbyyoutube(data.name)">Youtube</button>
+				<button @click="getsrc(index)">audition</button>
+			</div>
+		</div>
+		<div class="pagecontrol">
+			<button class="pagebtn" @click="pageminus"><</button>
+			<button class="pagebtn" @click="pageplus">></button>
+		</div>
+	</div>
+	<iframe id="kkbox" src="" frameborder="0"></iframe>
+	<footer>
+	<a href="https://ithelp.ithome.com.tw/users/20110850">about me</a>
+	<a href="https://github.com/ianchen0119">github</a>
+	</footer>
+	<script type="text/javascript" src="main.js"></script>
+	<script>
+	navigator.serviceWorker.register('service-worker.js')
+        .then(function (registration)
+        {
+          console.log('Service worker registered successfully');
+        }).catch(function (e)
+        {
+          console.error('Error during service worker registration:', e);
+        });
+	</script> 
+</body>
+</html>
