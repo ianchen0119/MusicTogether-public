@@ -54,7 +54,7 @@ var app = new Vue({
 			    .get("https://www.googleapis.com/youtube/v3/search?q="+sing+"&maxResults=1&part=snippet&key="+this.apikey )
 			    .then(response => {
 			      this.videoId = response.data.items[0].id.videoId;
-			      window.location.href="https://www.youtube.com/embed/"+this.videoId;
+			      window.location.href="https://www.youtube.com/watch?v="+this.videoId;
 			    })
 			    .catch(error => {
 			      console.log(error);
