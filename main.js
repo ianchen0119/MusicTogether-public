@@ -49,17 +49,16 @@ var app = new Vue({
 			getsrc(index){
 				document.querySelector('#kkbox').src = "https://widget.kkbox.com/v1/?id="+this.searchreponse[index].id+"&type=song";
 			},
-			playbyyoutube(sing){
-			  axios
+			async playbyyoutube(sing){
+			  await axios
 			    .get("https://www.googleapis.com/youtube/v3/search?q="+sing+"&maxResults=1&part=snippet&key="+this.apikey )
 			    .then(response => {
 			      this.videoId = response.data.items[0].id.videoId;
-// 			      window.location.href="https://www.youtube.com/watch?v="+this.videoId;
 			    })
 			    .catch(error => {
 			      console.log(error);
 			    })
-			winRef = window.open("https://www.youtube.com/watch?v="+this.videoId,"_blank");
+			window.open("https://www.youtube.com/watch?v="+this.videoId,"_blank");
 			}
 		}
 	})
