@@ -29,7 +29,7 @@
 
 將該專案下載或是CLONE後,有幾個地方需要設定:
 
-1. main.js中KKBOX OPENAPI以及Youtube search api的APIKEY
+1. main.js中的Youtube search api的APIKEY
 
 2. manifest.json 中的網頁起始路徑
 
