@@ -36,9 +36,13 @@
 針對上述兩點,提供以下連結方便使用者建置以及參考:
 
 [KKBOX Open API 的相遇 By 六角學院](https://www.youtube.com/watch?v=8ipg4JxkY1s&t=12s)
+
 [KKBOX OPENAPI投影片](https://drive.google.com/file/d/1-v7Sx3VDkn4PcLQq-H-1nR98ApMT8u_u/view)
+
 [KKBOX DEV](https://docs-en.kkbox.codes/reference?showHidden=17dc1#devices-flow)
+
 [YouTube Data API](https://developers.google.com/youtube/v3/docs/search/list)
+
 [PWA 說明文件](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=zh-tw)
 
 
