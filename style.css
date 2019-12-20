@@ -33,7 +33,37 @@
 			color: black;
 /* 			font-family: "微軟正黑體"; */
 		}
-
+		.rank{
+			width: 70vw;
+			position: relative;
+			top: 15vh;
+			left: 15vw;
+			transform: translate(0px,-15vw);
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			border-radius: 2rem;
+			padding-top: 5vh;
+			padding-left: 5vh;
+			padding-bottom: 10vh;
+			margin-bottom: 15vh;
+		}
+		.rank>.rankblock{
+			width: 100% auto;
+			padding-top: 10px; 
+		}
+		.rank>.rankblock>.container{
+			width: 100% auto;
+			display: flex;
+			flex-direction: wrap;
+			flex-wrap: wrap;
+		}
+		.rank>.rankblock>.container>a{
+			text-decoration: none;
+			color: black;
+			margin-top: 10%; 
+		}
 		.searchreponse{
 			margin-top: 10%;
 			display: flex;
@@ -156,6 +186,9 @@
 		.searchreponse{
 		margin-top: 0%;
 		}
+		.rank{
+		top:30vh;
+			}
 		.block{
 			display: flex;
 			flex-direction: column;
