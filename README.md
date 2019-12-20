@@ -5,6 +5,7 @@
 ### 應用技術
 
 - Vue.js(without vue cli)
+- Vue.js function-based Api
 - axios
 - PWA
 - KKBOX OPENAPI
@@ -15,6 +16,8 @@
 - - -
 
 看到六角學院副校長分享該活動覺得很有意思,最近剛好也在學習Vue.js這項技術,因此當天看了KKBOX OPENAPI的相關影片把東西生了出來。
+
+> 後記：雖然Vue 3.0還沒釋出，但已經有Composition Api可以嚐鮮，因此也將整體架構改為function-based。
 
 ### 該專案的功能
 
