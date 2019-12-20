@@ -4,7 +4,7 @@
 
 ### 應用技術
 
-- Vue.js(without vue cli)
+- Vue.js
 - Vue.js function-based Api
 - axios
 - PWA
