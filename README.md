@@ -32,9 +32,11 @@
 
 將該專案下載或是CLONE後,有幾個地方需要設定:
 
-1. main.js中的Youtube search api的APIKEY
+1. main.js中的Youtube search api的APIKEY。
 
-2. manifest.json 中的網頁起始路徑
+2. manifest.json 中的網頁起始路徑。
+
+3. index.html中的登入連結，其連結的redirect_uri 需要先經過[URL encode](https://www.urlencoder.org/)。
 
 針對上述兩點,提供以下連結方便使用者建置以及參考:
 
