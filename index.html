@@ -31,7 +31,7 @@
 			<img class="logo" src="images/logo.png">
 			<input type="text" v-model="search" class="searchbar">
 			<button @click="searchbar" class="searchbtn">search</button>
-			<button id="login" class="searchbtn"><a class="login" href="https://account.kkbox.com/oauth2/authorize?redirect_uri=https://ianchen0119.github.io/musictogether/index.html&client_id=b09edcab8ba6c5a20e7d3622ed17761e&response_type=code&state=123">login</a></button>
+			<button id="login" class="searchbtn"><a class="login" href="https://account.kkbox.com/oauth2/authorize?redirect_uri=https%3A%2F%2Fianchen0119.github.io%2Fmusictogether%2F&client_id=b09edcab8ba6c5a20e7d3622ed17761e&response_type=code&state=123">login</a></button>
 		</div>
 		<div class="searchreponse" v-if="accesstoken !== 'uncatch'">
 			<div class="block" v-for="(data ,index) in searchreponse" v-if="index>page-2&&index<page+3">
