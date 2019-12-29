@@ -1,5 +1,4 @@
-## MusicTogether-public 跟著六角學院和KKBOX一起聽音樂
-
+## MusicTogether-public
 - - -
 
 ### 應用技術
