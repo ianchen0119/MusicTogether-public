@@ -1,6 +1,10 @@
 ## MusicTogether-public
 - - -
 
+### DEMO
+
+[DEMO連結](https://ianchen0119.github.io/musictogether/)
+
 ### 應用技術
 
 - Vue.js
